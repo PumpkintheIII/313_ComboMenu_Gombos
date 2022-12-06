@@ -82,7 +82,7 @@ def drink():
     welcome()
     #allows the user to add more items to thier order
 def fries():
-    print("Which size would you like?\n  1: Small ($1)\n  2: Medium ($1.50)\n  3: Large ($2)")
+    print("\nWhich size would you like?\n  1: Small ($1)\n  2: Medium ($1.50)\n  3: Large ($2)")
     #lists the frie size options
     index = int(input("Please select the number of the frie size you would like to purchase! (1, 2, or 3)"))
     #has the user input the size they want, sets the index variable to its corresponding value
@@ -116,6 +116,8 @@ def ketchup():
   #adds ketchup to the total_cost_list
   final_order_list.append(str(ketchup) + " ketchup packets")
   #adds ketchup to the final_order_list
+  type_list.append(4)
+  #adds ketchup to the type_list
   total_cost()
   #tells user cost of order so far
   welcome()
@@ -182,7 +184,7 @@ def check_out():
     if (s > 0 and d > 0 and f > 0):
       #checks if there is 1 of each item in the order
       cost = cost - 1
-      #if ther is, subtracts 1 from the price
+      #if there is, subtracts 1 from the price
       s = s - 1
       d = d - 1
       f = f - 1
